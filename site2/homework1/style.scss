@@ -1,0 +1,147 @@
+$colorBlack: #202027;
+$colorGreen: #BCEC30;
+$colorLightGreen: #E1FF8F;
+$colorWhite: #FFFFFF;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc((100% - 1200px) / 2);
+    padding-right: calc((100% - 1200px) / 2);
+}
+
+.top {
+    background-color: $colorLightGreen;
+    padding-top: 196px;
+
+    &__title {
+        color: $colorBlack;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        margin-bottom: 24px;
+        
+    }
+    &__text {
+        color: $colorBlack;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 48px;
+    }
+    &__link-go {
+        display: inline-block;
+        color: $colorWhite;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 142%;
+        text-decoration: none;
+        margin-bottom: 156px;
+
+        padding: 16px 65px;
+        background-color: $colorBlack;
+        border-radius: 60px;
+        border: 1px solid $colorBlack;
+
+        &:hover {
+            color: $colorBlack;
+            background-color: $colorWhite;
+            border-color: $colorBlack;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    gap: 51px;
+    background-color: $colorGreen;
+    padding: 28px 0px;
+
+    &__item {
+        display: flex;
+        gap: 51px;
+    }
+    &__text {
+        color: $colorBlack;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+
+} 
+
+.about-games {
+    background-color: $colorBlack;
+    padding-top: 94px;
+    padding-bottom: 50px;
+
+    &__title {
+        color: $colorWhite;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        margin-bottom: 24px;
+    }
+    &__text {
+        color: $colorWhite;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 62px;
+    }
+
+    .games {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        
+        &__item {
+            background-color: $colorWhite;
+            border-radius: 30px;
+
+            /*&_small {
+                height: 473px;
+            }
+            &_middle {
+                height: 512px;
+            }
+            &_big {
+                height: 551px;
+            }*/
+        }
+        &__image {
+            border-radius: 30px;
+            width: 378px;
+            height: 314px;
+            background-color: #E1FF8F;
+        }
+        &__description {
+            padding: 32px 32px 36px 32px;
+        }
+        &__number {
+            max-width: 80px;
+            color: $colorBlack;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 110%;
+
+            border-radius: 52px;
+            background: rgb(247, 247, 247);
+            padding: 10px 16px;
+        }
+        &__name {
+            color: $colorBlack;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+        }
+    }
+}

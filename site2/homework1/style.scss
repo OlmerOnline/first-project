@@ -10,7 +10,6 @@ $colorWhite: #FFFFFF;
 
 body {
     font-family: "Montserrat", sans-serif;
-    //coment
 }
 
 .center {
@@ -104,6 +103,9 @@ body {
         flex-wrap: wrap;
         gap: 32px;
         
+        &__link {
+            text-decoration: none;
+        }
         &__item {
             background-color: $colorWhite;
             border-radius: 30px;

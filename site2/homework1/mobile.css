@@ -1,0 +1,40 @@
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    padding-top: 147px;
+  }
+  .top__title {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    padding: 0px 40px;
+  }
+  .top__text {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0px 23px;
+    margin-bottom: 36px;
+  }
+  .top__link-go {
+    font-size: 16px;
+    padding: 16px 103px;
+    margin: 0px 29px 131px 29px;
+  }
+  .nav {
+    display: none;
+    padding: 17px 0px;
+  }
+  .nav__text {
+    font-size: 16px;
+  }
+  .nav__img-star {
+    width: 19px;
+    height: 19px;
+  }
+  .about-games {
+    display: none;
+  }
+}/*# sourceMappingURL=mobile.css.map */

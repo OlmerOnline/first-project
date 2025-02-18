@@ -24,6 +24,34 @@
     padding: 16px 103px;
     margin: 0px 29px 131px 29px;
   }
+  .top__star-left-green {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: -50px;
+    left: 20px;
+  }
+  .top__star-left-transparent {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: -83px;
+    left: 74px;
+  }
+  .top__star-right-green {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    bottom: -57px;
+    right: 70px;
+  }
+  .top__star-right-transparent {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: -102px;
+    right: 18px;
+  }
 
   .nav {
     display: none;

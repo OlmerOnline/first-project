@@ -20,9 +20,15 @@ body {
 .top {
     background-color: $colorLightGreen;
     padding-top: 196px;
+    padding-bottom: 156px;
 
+    &__content {
+        position: relative;
+        max-width: 768px;
+    }
     &__title {
         color: $colorBlack;
+        
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
@@ -44,7 +50,6 @@ body {
         font-weight: 600;
         line-height: 142%;
         text-decoration: none;
-        margin-bottom: 156px;
 
         padding: 16px 65px;
         background-color: $colorBlack;
@@ -56,6 +61,27 @@ body {
             background-color: $colorWhite;
             border-color: $colorBlack;
         }
+    }
+
+    &__star-left-green {
+        position: absolute;
+        top: -102px;
+        left: -57px;
+    }
+    &__star-left-transparent {
+        position: absolute; 
+        top: -127px;
+        left: 36px;
+    }
+    &__star-right-green {
+        position: absolute;
+        bottom: -16px;
+        right: -97px;
+    }
+    &__star-right-transparent {
+        position: absolute; 
+        bottom: -97px;
+        right: -208px;
     }
 }
 

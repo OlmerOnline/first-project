@@ -148,7 +148,7 @@ body {
   font-weight: 500;
   line-height: 110%;
   border-radius: 52px;
-  background: rgb(247, 247, 247);
+  background: #f7f7f7;
   padding: 10px 16px;
 }
 .about-games .games__name {
@@ -163,6 +163,7 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
+
   .top {
     padding-top: 147px;
   }
@@ -211,6 +212,7 @@ body {
     bottom: -102px;
     right: 18px;
   }
+
   .nav {
     display: none;
     padding: 17px 0px;
@@ -222,7 +224,8 @@ body {
     width: 19px;
     height: 19px;
   }
+
   .about-games {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}

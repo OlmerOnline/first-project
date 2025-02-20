@@ -20,9 +20,18 @@ body {
 .top {
     background-color: $colorLightGreen;
     padding-top: 196px;
+    padding-bottom: 156px;
+    background-image: url(image/big-star-top.svg);
+    background-repeat: no-repeat;
+    background-position: 854px calc(100% + 90px);
 
+    &__content {
+        position: relative;
+        max-width: 768px;
+    }
     &__title {
         color: $colorBlack;
+        
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
@@ -35,6 +44,7 @@ body {
         font-weight: 400;
         line-height: 32px;
         margin-bottom: 48px;
+        max-width: 720px;
     }
     &__link-go {
         display: inline-block;
@@ -43,7 +53,6 @@ body {
         font-weight: 600;
         line-height: 142%;
         text-decoration: none;
-        margin-bottom: 156px;
 
         padding: 16px 65px;
         background-color: $colorBlack;
@@ -56,17 +65,46 @@ body {
             border-color: $colorBlack;
         }
     }
+
+    &__star-left-green {
+        position: absolute;
+        top: -102px;
+        left: -57px;
+    }
+    &__star-left-transparent {
+        position: absolute; 
+        top: -127px;
+        left: 36px;
+    }
+    &__star-right-green {
+        position: absolute;
+        bottom: -16px;
+        right: -97px;
+    }
+    &__star-right-transparent {
+        position: absolute; 
+        bottom: -97px;
+        right: -208px;
+    }
+    &__star-big-mobile {
+        transform: rotate(108deg);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 .nav {
     display: flex;
     gap: 51px;
     background-color: $colorGreen;
-    padding: 28px 0px;
+    padding: 27px 0px;
+    overflow: hidden;
 
     &__item {
         display: flex;
         gap: 51px;
+        flex-shrink: 0;
     }
     &__text {
         color: $colorBlack;
@@ -148,3 +186,6 @@ body {
         }
     }
 }
+
+
+@import "mobile";

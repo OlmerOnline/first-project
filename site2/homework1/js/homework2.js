@@ -1,4 +1,4 @@
-let a = 10;
+/*let a = 10;
 alert(`Переменная a равняется ${a}`);
 a = 20;
 alert(`А теперь переменная a равняется ${a}`);
@@ -42,4 +42,4 @@ let user = {
 };
 
 userName = prompt("Как вас зовут?");
-alert(`Привет, ${userName}!`);
+alert(`Привет, ${userName}!`);*/

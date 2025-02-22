@@ -276,6 +276,18 @@ body {
   right: -70px;
 }
 
+.footer {
+  background-color: #BCEC30;
+  padding: 60px 0px;
+}
+.footer__text {
+  color: #202027;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;

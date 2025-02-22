@@ -1,4 +1,4 @@
-/*let password = "12345";
+let password = "12345";
 let userPassword = prompt ("Введите пароль");
 if (password === userPassword) {
     console.log("Пароль введен верно");
@@ -65,4 +65,4 @@ switch (monthNumber) {
         break;
     default:
         console.log("Такого месяца нет");
-}*/
+}

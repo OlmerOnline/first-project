@@ -21,7 +21,7 @@ body {
     background-color: $colorLightGreen;
     padding-top: 196px;
     padding-bottom: 156px;
-    background-image: url(image/big-star-top.svg);
+    background-image: url(image/stars/top/big-star-top.svg);
     background-repeat: no-repeat;
     background-position: 854px calc(100% + 90px);
 
@@ -29,15 +29,17 @@ body {
         position: relative;
         max-width: 768px;
     }
+
     &__title {
         color: $colorBlack;
-        
+
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
         margin-bottom: 24px;
-        
+
     }
+
     &__text {
         color: $colorBlack;
         font-size: 24px;
@@ -46,6 +48,7 @@ body {
         margin-bottom: 48px;
         max-width: 720px;
     }
+
     &__link-go {
         display: inline-block;
         color: $colorWhite;
@@ -57,12 +60,11 @@ body {
         padding: 16px 65px;
         background-color: $colorBlack;
         border-radius: 60px;
-        border: 1px solid $colorBlack;
 
         &:hover {
             color: $colorBlack;
             background-color: $colorWhite;
-            border-color: $colorBlack;
+            border: 1px solid $colorBlack;
         }
     }
 
@@ -71,21 +73,25 @@ body {
         top: -102px;
         left: -57px;
     }
+
     &__star-left-transparent {
-        position: absolute; 
+        position: absolute;
         top: -127px;
         left: 36px;
     }
+
     &__star-right-green {
         position: absolute;
         bottom: -16px;
         right: -97px;
     }
+
     &__star-right-transparent {
-        position: absolute; 
+        position: absolute;
         bottom: -97px;
         right: -208px;
     }
+
     &__star-big-mobile {
         transform: rotate(108deg);
         position: absolute;
@@ -106,6 +112,7 @@ body {
         gap: 51px;
         flex-shrink: 0;
     }
+
     &__text {
         color: $colorBlack;
         font-size: 30px;
@@ -114,12 +121,18 @@ body {
         text-transform: uppercase;
     }
 
-} 
+}
 
 .about-games {
     background-color: $colorBlack;
     padding-top: 94px;
     padding-bottom: 50px;
+    border-bottom: 1px solid $colorLightGreen;
+
+    &__content {
+        position: relative;
+        z-index: 1;
+    }
 
     &__title {
         color: $colorWhite;
@@ -128,6 +141,7 @@ body {
         line-height: 78px;
         margin-bottom: 24px;
     }
+
     &__text {
         color: $colorWhite;
         font-size: 24px;
@@ -140,10 +154,11 @@ body {
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
-        
+
         &__link {
             text-decoration: none;
         }
+
         &__item {
             background-color: $colorWhite;
             border-radius: 30px;
@@ -158,15 +173,18 @@ body {
                 height: 551px;
             }*/
         }
+
         &__image {
             border-radius: 30px;
             width: 378px;
             height: 314px;
             background-color: #E1FF8F;
         }
+
         &__description {
             padding: 32px 32px 36px 32px;
         }
+
         &__number {
             max-width: 80px;
             color: $colorBlack;
@@ -178,12 +196,135 @@ body {
             background: rgb(247, 247, 247);
             padding: 10px 16px;
         }
+
         &__name {
             color: $colorBlack;
             font-size: 32px;
             font-weight: 700;
             line-height: 39px;
         }
+    }
+
+    &__star-little {
+        position: absolute;
+        left: -91px;
+        top: 650px;
+    }
+
+    &__star-middle {
+        position: absolute;
+        left: -74px;
+        top: 715px;
+    }
+
+    &__star-big {
+        position: absolute;
+        right: -262px;
+        top: -17px;
+        z-index: -1;
+    }
+}
+
+.mini-games {
+    background-color: $colorBlack;
+    padding-top: 46px;
+    padding-bottom: 144px;
+
+    &__content {
+        position: relative;
+    }
+
+    &__title {
+        color: $colorWhite;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        margin-bottom: 72px;
+    }
+
+    &__games {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+
+    &__item {
+        display: flex;
+        background-color: $colorWhite;
+        border-radius: 30px;
+    }
+
+    &__item_reverse {
+        flex-direction: row-reverse;
+    }
+
+    &__img {
+        border-radius: 30px;
+    }
+
+    &__description {
+        background-color: $colorWhite;
+        padding: 48px 48px 48px 48px;
+        flex-grow: 1;
+        border-radius: 30px;
+    }
+
+    &__name {
+        color: $colorBlack;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: $colorBlack;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 36px;
+    }
+
+    &__link {
+        color: $colorWhite;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        text-decoration: none;
+
+        background-color: $colorBlack;
+        padding: 16px 75px;
+        border-radius: 60px;
+
+        &:hover {
+            color: $colorBlack;
+            background-color: $colorWhite;
+            border: 1px solid $colorBlack;
+        }
+    }
+
+    &__star-top-little {
+        position: absolute;
+        top: 47px;
+        right: 0px;
+    }
+
+    &__star-top-middle {
+        position: absolute;
+        top: 80px;
+        right: -70px;
+    }
+
+    &__star-bottom-little {
+        position: absolute;
+        bottom: -99px;
+        right: 29px;
+    }
+
+    &__star-bottom-middle {
+        position: absolute;
+        bottom: -79px;
+        right: -70px;
     }
 }
 

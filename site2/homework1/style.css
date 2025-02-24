@@ -146,6 +146,9 @@ body {
 .about-games .games__item_big {
   margin-top: -39px;
 }
+.about-games .games__item:hover {
+  transform: scale(1.1);
+}
 .about-games .games__image {
   border-radius: 30px;
   width: 378px;

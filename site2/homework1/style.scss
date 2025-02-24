@@ -160,7 +160,6 @@ body {
 
         &__link {
             text-decoration: none;
-            //display: flex;
         }
 
         &__item {
@@ -171,6 +170,10 @@ body {
 
             &_big {
                 margin-top: -39px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
             }
         }
 

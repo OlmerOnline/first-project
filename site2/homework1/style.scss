@@ -128,10 +128,13 @@ body {
     padding-top: 94px;
     padding-bottom: 50px;
     border-bottom: 1px solid $colorLightGreen;
+    overflow: hidden;
 
     &__content {
         position: relative;
         z-index: 1;
+        display: flex;
+        flex-direction: column;
     }
 
     &__title {
@@ -147,7 +150,7 @@ body {
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
-        margin-bottom: 62px;
+        margin-bottom: 72px;
     }
 
     .games {
@@ -157,21 +160,18 @@ body {
 
         &__link {
             text-decoration: none;
+            //display: flex;
         }
 
         &__item {
+            display: flex;
+            flex-direction: column;
             background-color: $colorWhite;
             border-radius: 30px;
 
-            /*&_small {
-                height: 473px;
-            }
-            &_middle {
-                height: 512px;
-            }
             &_big {
-                height: 551px;
-            }*/
+                margin-top: -39px;
+            }
         }
 
         &__image {
@@ -194,7 +194,8 @@ body {
 
             border-radius: 52px;
             background: rgb(247, 247, 247);
-            padding: 10px 16px;
+            padding: 8px 16px 10px 16px;
+            margin-bottom: 16px;
         }
 
         &__name {
@@ -229,6 +230,7 @@ body {
     background-color: $colorBlack;
     padding-top: 46px;
     padding-bottom: 144px;
+    overflow: hidden;
 
     &__content {
         position: relative;
@@ -286,6 +288,7 @@ body {
     }
 
     &__link {
+        display: inline-block;
         color: $colorWhite;
         font-size: 24px;
         font-weight: 600;

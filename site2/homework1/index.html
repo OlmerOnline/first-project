@@ -16,11 +16,12 @@
             <p class="top__text">Тебе предстоит пройти несколько увлекательных игр.
                 Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</p>
             <a class="top__link-go" href="#about-games">Поехали!</a>
-            <img class="top__star-left-green" src="image/star-top-left-green.svg" alt="star">
-            <img class="top__star-left-transparent" src="image/star-top-left-transparent.svg" alt="star">
-            <img class="top__star-right-green" src="image/star-top-right-green.svg" alt="star">
-            <img class="top__star-right-transparent" src="image/star-top-right-transparent.svg" alt="star">        </div>
+            <img class="top__star-left-green" src="image/stars/top/star-top-left-green.svg" alt="star">
+            <img class="top__star-left-transparent" src="image/stars/top/star-top-left-transparent.svg" alt="star">
+            <img class="top__star-right-green" src="image/stars/top/star-top-right-green.svg" alt="star">
+            <img class="top__star-right-transparent" src="image/stars/top/star-top-right-transparent.svg" alt="star">        </div>
     </section>
+
     <section class="nav">
         <div class="nav__item">
             <h3 class="nav__text">Викторина</h3>
@@ -47,68 +48,139 @@
             <img src="img_star.svg" class="nav__img-star" alt="star">
         </div>
     </section>
+    
     <section class="about-games center" id="about-games">
-        <h1 class="about-games__title">Об играх</h1>
-        <p class="about-games__text">В моей коллекции представлено 6 игр на разные темы.<br>
-            Игры несложные — в них может поиграть каждый.<br>
-            Все игры доступны для пользования.</p>
-        <div class="games">
-            <a href="#" class="games__link">
-                <article class="games__item games__item_small">
-                    <img class="games__image" src="games1.jpeg" alt="games1">
-                    <div class="games__description">
-                        <h6 class="games__number">Игра № 1</h6>
-                        <p class="games__name">Угадай число</p>
-                    </div>  
-                </article>
-            </a>
-            <a href="#" class="games__link">
-                <article class="games__item games__item_middle">
-                    <img class="games__image" src="games2.jpeg" alt="games2">
-                    <div class="games__description">
-                        <h6 class="games__number">Игра № 2</h6>
-                        <p class="games__name">Простая <br>арифметика</p>
-                    </div>
-                </article>
-            </a>
-            <a href="#" class="games__link">
-                <article class="games__item games__item_small">
-                    <img class="games__image" src="games3.jpeg" alt="games3">
-                    <div class="games__description">
-                        <h6 class="games__number">Игра № 3</h6>
-                        <p class="games__name">Переверни текст</p>
-                    </div>
-                </article>
-            </a>
-            <a href="#" class="games__link">
-                <article class="games__item games__item_big">
-                    <img class="games__image" src="games4.jpeg" alt="games4">
-                    <div class="games__description">
-                        <h6 class="games__number">Игра № 4</h6>
-                        <p class="games__name">Камень, <br>ножницы, <br>бумага</p>
-                    </div>
-                </article>
-            </a>
-            <a href="#" class="games__link">
-                <article class="games__item games__item_middle">
-                    <img class="games__image" src="games5.jpeg" alt="games5">
-                    <div class="games__description">
-                        <h6 class="games__number">Игра № 5</h6>
-                        <p class="games__name">Простая <br>викторина</p>
-                    </div>
-                </article>
-            </a>
-            <a href="#" class="games__link">
-                <article class="games__item games__item_big">
-                    <img class="games__image" src="games6.jpeg" alt="games6">
-                    <div class="games__description">
-                        <h6 class="games__number">Игра № 6</h6>
-                        <p class="games__name">Генератор <br>случайных <br>цветов</p>
-                    </div>
-                </article>
-            </a>
+        <div class="about-games__content">
+            <h1 class="about-games__title">Об играх</h1>
+            <p class="about-games__text">В моей коллекции представлено 6 игр на разные темы.<br>
+                Игры несложные — в них может поиграть каждый.<br>
+                Все игры доступны для пользования.</p>
+            <div class="games">
+                <a href="#game-guess-number" class="games__link">
+                    <article class="games__item">
+                        <img class="games__image" src="image/about-games/game1.jpeg" alt="game1">
+                        <div class="games__description">
+                            <h6 class="games__number">Игра № 1</h6>
+                            <p class="games__name">Угадай число</p>
+                        </div>  
+                    </article>
+                </a>
+                <a href="#game-simple-arithmetic" class="games__link">
+                    <article class="games__item">
+                        <img class="games__image" src="image/about-games/game2.jpeg" alt="game2">
+                        <div class="games__description">
+                            <h6 class="games__number">Игра № 2</h6>
+                            <p class="games__name">Простая <br>арифметика</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="#game-turn-text" class="games__link">
+                    <article class="games__item">
+                        <img class="games__image" src="image/about-games/game3.jpeg" alt="game3">
+                        <div class="games__description">
+                            <h6 class="games__number">Игра № 3</h6>
+                            <p class="games__name">Переверни текст</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="#game-rock-paper-scissor" class="games__link">
+                    <article class="games__item games__item_big">
+                        <img class="games__image" src="image/about-games/game4.jpeg" alt="game4">
+                        <div class="games__description">
+                            <h6 class="games__number">Игра № 4</h6>
+                            <p class="games__name">Камень, <br>ножницы, <br>бумага</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="#game-quiz" class="games__link">
+                    <article class="games__item">
+                        <img class="games__image" src="image/about-games/game5.jpeg" alt="game5">
+                        <div class="games__description">
+                            <h6 class="games__number">Игра № 5</h6>
+                            <p class="games__name">Простая <br>викторина</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="#game-random-color-generator" class="games__link">
+                    <article class="games__item games__item_big">
+                        <img class="games__image" src="image/about-games/game6.jpeg" alt="game6">
+                        <div class="games__description">
+                            <h6 class="games__number">Игра № 6</h6>
+                            <p class="games__name">Генератор <br>случайных <br>цветов</p>
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <img class="about-games__star-little" src="image/stars/about-games/star-about-games-little.svg" alt="star">
+            <img class="about-games__star-middle" src="image/stars/about-games/star-about-games-middle.svg" alt="star">
+            <img class="about-games__star-big" src="image/stars/about-games/star-about-games-big.svg" alt="star">
         </div>
     </section>
-    <script src="js/homework2.js"></script>
+
+    <section class="mini-games center">
+        <div class="mini-games__content">
+            <h1 class="mini-games__title">Мини-игры</h1>
+            <div class="mini-games__games">
+                <div class="mini-games__item mini-games__item_reverse" id="game-guess-number">
+                    <img class="mini-games__img" src="image/mini-games/game1.jpeg" alt="game1">
+                    <div class="mini-games__description">
+                        <h3 class="mini-games__name">Угадай число</h3>
+                        <p class="mini-games__text">Попробуй угадать случайное <br>число от 1 до 100.</p>
+                        <a href="#" class="mini-games__link">Играть!</a>
+                    </div>
+                </div>
+                <div class="mini-games__item" id="game-simple-arithmetic">
+                    <img class="mini-games__img" src="image/mini-games/game2.jpeg" alt="game2">
+                    <div class="mini-games__description">
+                        <h3 class="mini-games__name">Простая <br>арифметика</h3>
+                        <p class="mini-games__text">Попробуй решить простые арифметические задачи.</p>
+                        <a href="#" class="mini-games__link">Играть!</a>
+                    </div>
+                </div>
+                <div class="mini-games__item mini-games__item_reverse" id="game-turn-text">
+                    <img class="mini-games__img" src="image/mini-games/game3.jpeg" alt="game3">
+                    <div class="mini-games__description">
+                        <h3 class="mini-games__name">Переверни текст</h3>
+                        <p class="mini-games__text">Попробуй ввести текст, который <br>будет перевернут.</p>
+                        <a href="#" class="mini-games__link">Играть!</a>
+                    </div>
+                </div>
+                <div class="mini-games__item" id="game-quiz">
+                    <img class="mini-games__img" src="image/mini-games/game4.jpeg" alt="game4">
+                    <div class="mini-games__description">
+                        <h3 class="mini-games__name">Викторина</h3>
+                        <p class="mini-games__text">Отвечай на вопросы викторины<br>с вариантами ответов.</p>
+                        <a href="#" class="mini-games__link">Играть!</a>
+                    </div>
+                </div>
+                <div class="mini-games__item mini-games__item_reverse" id="game-rock-paper-scissor">
+                    <img class="mini-games__img" src="image/mini-games/game5.jpeg" alt="game5">
+                    <div class="mini-games__description">
+                        <h3 class="mini-games__name">Камень, <br>ножницы, <br>бумага</h3>
+                        <p class="mini-games__text">Сыграй в популярную игру <br>против компьютера.</p>
+                        <a href="#" class="mini-games__link">Играть!</a>
+                    </div>
+                </div>
+                <div class="mini-games__item" id="game-random-color-generator">
+                    <img class="mini-games__img" src="image/mini-games/game6.jpeg" alt="game6">
+                    <div class="mini-games__description">
+                        <h3 class="mini-games__name">Генератор <br>случайных <br>цветов</h3>
+                        <p class="mini-games__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                        <a href="#" class="mini-games__link">Играть!</a>
+                    </div>
+                </div>
+            </div>
+            <img class="mini-games__star-top-little" src="image/stars/mini-games/star-mini-games-top-little.svg" alt="star">
+            <img class="mini-games__star-top-middle" src="image/stars/mini-games/star-mini-games-top-middle.svg" alt="star">
+            <img class="mini-games__star-bottom-little" src="image/stars/mini-games/star-mini-games-bottom-little.svg" alt="star">
+            <img class="mini-games__star-bottom-middle" src="image/stars/mini-games/star-mini-games-bottom-middle.svg" alt="star">
+        </div>
+    </section>
+
+    <section class="footer">
+        <p class="footer__text">Все права защищены.</p>
+    </section>
+
+    <script src="js/hw3.js"></script>
 </body>
 </html>

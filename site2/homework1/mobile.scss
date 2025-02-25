@@ -1,5 +1,5 @@
 @media (max-width: 767px) {
-    
+
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -8,7 +8,7 @@
     .top {
         padding-top: 147px;
         padding-bottom: 131px;
-        background-image: url(image/star-big-top-mobile.svg);
+        background-image: url(image/stars/top/star-big-top-mobile.svg);
         background-repeat: no-repeat;
         background-position: 215px -85px;
 
@@ -18,12 +18,14 @@
             text-align: center;
             padding: 0px 40px;
         }
+
         &__text {
             font-size: 16px;
             line-height: 20px;
             padding: 0px 23px;
             margin-bottom: 36px;
         }
+
         &__link-go {
             font-size: 16px;
             padding: 16px 103px;
@@ -37,6 +39,7 @@
             top: -50px;
             left: 20px;
         }
+
         &__star-left-transparent {
             position: absolute;
             width: 21px;
@@ -44,6 +47,7 @@
             top: -83px;
             left: 74px;
         }
+
         &__star-right-green {
             position: absolute;
             width: 18px;
@@ -51,6 +55,7 @@
             bottom: -57px;
             right: 70px;
         }
+
         &__star-right-transparent {
             position: absolute;
             width: 40px;
@@ -62,16 +67,17 @@
 
     .nav {
         padding: 17px 0px;
-        
+
         &__text {
             font-size: 16px;
         }
+
         &__img-star {
             width: 19px;
             height: 19px;
         }
-    }  
-    
+    }
+
     .about-games {
         display: none;
     }

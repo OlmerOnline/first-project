@@ -1,4 +1,4 @@
-/*console.log("Задание №1");
+console.log("Задание №1");
 function printMinNumber (a, b) {
     if (a < b) {
         return a;
@@ -102,4 +102,4 @@ console.log(`Периметр: ${circle1.perimeter()}`);
 
 console.log("Вторая окружность");
 console.log(`Площадь: ${circle2.area()}`);
-console.log(`Периметр: ${circle2.perimeter()}`)*/
+console.log(`Периметр: ${circle2.perimeter()}`)

@@ -247,65 +247,65 @@ body {
         margin-bottom: 72px;
     }
 
-    &__games {
+    &__games-box {
         display: flex;
         flex-direction: column;
         row-gap: 32px;
     }
 
-    &__item {
+    .game-mini-games {
         display: flex;
         background-color: $colorWhite;
         border-radius: 30px;
-    }
 
-    &__item_reverse {
-        flex-direction: row-reverse;
-    }
+        &_reverse {
+            flex-direction: row-reverse;
+        }
 
-    &__img {
-        border-radius: 30px;
-    }
+        &__img {
+            border-radius: 30px;
+        }
 
-    &__description {
-        background-color: $colorWhite;
-        padding: 48px 48px 48px 48px;
-        flex-grow: 1;
-        border-radius: 30px;
-    }
-
-    &__name {
-        color: $colorBlack;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 59px;
-        margin-bottom: 24px;
-    }
-
-    &__text {
-        color: $colorBlack;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px;
-        margin-bottom: 36px;
-    }
-
-    &__link {
-        display: inline-block;
-        color: $colorWhite;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 141.69%;
-        text-decoration: none;
-
-        background-color: $colorBlack;
-        padding: 16px 75px;
-        border-radius: 60px;
-
-        &:hover {
-            color: $colorBlack;
+        &__description {
             background-color: $colorWhite;
-            border: 1px solid $colorBlack;
+            padding: 48px 48px 48px 48px;
+            flex-grow: 1;
+            border-radius: 30px;
+        }
+
+        &__name {
+            color: $colorBlack;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            color: $colorBlack;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 36px;
+        }
+
+        &__link {
+            display: inline-block;
+            color: $colorWhite;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            text-decoration: none;
+
+            background-color: $colorBlack;
+            padding: 16px 75px;
+            border-radius: 60px;
+
+            &:hover {
+                color: $colorBlack;
+                background-color: $colorWhite;
+                border: 1px solid $colorBlack;
+            }
         }
     }
 

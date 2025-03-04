@@ -1,4 +1,4 @@
-/*console.log("Задание №1");
+console.log("Задание №1");
 function printMinNumber (a, b) {
     if (a < b) {
         return a;
@@ -51,16 +51,13 @@ printGreetings(age);
 console.log("Задание №5");
 function isNumber(a, b) {
     if (!isNaN(a) && !isNaN(b)) {
-        return Number(a) * Number(b);
+        return a * b;
     } else {
         return "Одно или оба значения не являются числом";
     }
 }
 
-number1 = prompt("Введите первое число");
-number2 = prompt("Введите второе число");
-
-console.log(isNumber(number1, number2));
+console.log(isNumber(5, 7));
 
 
 console.log("Задание №6");
@@ -68,7 +65,7 @@ function pow(number) {
     if (isNaN(number)) {
         return "Переданный параметр не является числом";
     } else {
-        return Number(number) * Number(number) * Number(number);
+        return Number(number) ** 3;
     }
 }
 
@@ -78,11 +75,11 @@ console.log(pow(number));
 
 console.log("Задание №7");
 function getArea() {
-    return this.radius * this.radius * 3.14;
+    return this.radius * this.radius * Math.PI;
 }
 
 function getPerimeter() {
-    return this.radius * 2 * 3.14;
+    return this.radius * 2 * Math.PI;
 }
 
 let circle1 = {
@@ -103,4 +100,3 @@ console.log(`Периметр: ${circle1.perimeter()}`);
 console.log("Вторая окружность");
 console.log(`Площадь: ${circle2.area()}`);
 console.log(`Периметр: ${circle2.perimeter()}`)
-*/

@@ -7,6 +7,10 @@ function guessNumber() {
     while (true) {
         userAnswer = prompt("Введите число от 1 до 100?");
 
+        if (!userAnswer) {
+            break;
+        }
+
         if (isNumber(userAnswer)) {
             userAnswer = Number(userAnswer);
 
@@ -18,19 +22,11 @@ function guessNumber() {
         } else {
             alert("Это не число");
         }
-
-        if (!confirm("Играем дальше?")) {
-            break;
-        }
     }
 }
 
 function isNumber(number) {
-    if(!isNaN(number)) {
-        return true;
-    } else {
-        return false;
-    }
+    return !isNaN(number) ? true : false;
 }
 
 function isEquals(number, userAnswer) {
@@ -44,9 +40,7 @@ function isEquals(number, userAnswer) {
 }
 
 function printMoreOrLess(number, userAnswer) {
-    if (userAnswer > number) {
-        alert(`Не верно, загаданное число меньше ${userAnswer}`);
-    } else {
-        alert(`Не верно, загаданное число больше ${userAnswer}`);
-    }
+    return userAnswer > number ? 
+    alert(`Не верно, загаданное число меньше ${userAnswer}`) : 
+    alert(`Не верно, загаданное число больше ${userAnswer}`);
 }

@@ -49,11 +49,11 @@ body {
   padding: 16px 65px;
   background-color: #202027;
   border-radius: 60px;
+  border: 1px solid #202027;
 }
 .top__link-go:hover {
   color: #202027;
   background-color: #FFFFFF;
-  border: 1px solid #202027;
 }
 .top__star-left-green {
   position: absolute;

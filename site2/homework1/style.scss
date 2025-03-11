@@ -37,7 +37,6 @@ body {
         font-weight: 700;
         line-height: 78px;
         margin-bottom: 24px;
-
     }
 
     &__text {
@@ -56,15 +55,15 @@ body {
         font-weight: 600;
         line-height: 142%;
         text-decoration: none;
-
+    
         padding: 16px 65px;
         background-color: $colorBlack;
         border-radius: 60px;
-
+        border: 1px solid $colorBlack;
+    
         &:hover {
             color: $colorBlack;
             background-color: $colorWhite;
-            border: 1px solid $colorBlack;
         }
     }
 

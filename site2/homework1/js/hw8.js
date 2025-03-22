@@ -14,10 +14,10 @@ console.log('');
 
 console.log('Задание №2');
 function isPositive(number) {
-    return number >= 0 ? true : false;
+    return number >= 0;
 }
 function isMale(people) {
-    return people.gender === 'male' ? true : false;
+    return people.gender === 'male';
 }
 function filter(arr, callback) {
     const newArr = [];

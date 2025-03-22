@@ -4,7 +4,7 @@ function rockPaperScissor(params) {
 
     const userAnswer = prompt('Напишите камень, ножницы или бумага');
 
-    if (isCorrectInput(userAnswer, items)) {
+    if (items.includes(userAnswer.toLowerCase())) {
         const bot = items[getRandomIndex()];
         alert(`Вы выбрали: ${userAnswer.toLowerCase()}, компьютер выбррал: ${bot}`);
         
@@ -27,17 +27,5 @@ function rockPaperScissor(params) {
 
 function getRandomIndex() {
     return Math.floor(Math.random() * (2 - 0 + 1)) + 0;
-}
-
-function isCorrectInput(answer, arr) {
-    let isCorrect = false;
-
-    arr.forEach(element => {
-        if (element === answer.toLowerCase()) {
-            isCorrect = true;
-        }
-    });
-
-    return isCorrect;
 }
 

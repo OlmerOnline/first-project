@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc((100% - 500px) / 2);
+        padding-right: calc((100% - 500px) / 2);
+    }
+
+    .mini-games {
+        .game-mini-games {
+            flex-direction: column;
+
+            &_reverse {
+                flex-direction: column;
+            }
+
+            &__link {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

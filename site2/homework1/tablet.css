@@ -1,0 +1,11 @@
+@media (max-width: 1199px) {
+  .top {
+    background-image: none;
+  }
+  .about-games .games {
+    justify-content: space-around;
+  }
+  .about-games .games__item_big {
+    margin-top: 0px;
+  }
+}/*# sourceMappingURL=tablet.css.map */

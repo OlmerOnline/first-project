@@ -1,3 +1,11 @@
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -86,16 +94,22 @@ body {
 }
 
 .nav {
-  display: flex;
-  gap: 51px;
   background-color: #BCEC30;
   padding: 27px 0px;
   overflow: hidden;
+}
+.nav__content {
+  display: flex;
+  gap: 51px;
+  width: -moz-fit-content;
+  width: fit-content;
+  animation: marquee 30s linear forwards infinite;
 }
 .nav__item {
   display: flex;
   gap: 51px;
   flex-shrink: 0;
+  white-space: nowrap;
 }
 .nav__text {
   color: #202027;
@@ -296,6 +310,33 @@ body {
   text-align: center;
 }
 
+@media (max-width: 1199px) {
+  .top {
+    background-image: none;
+  }
+  .about-games .games {
+    justify-content: space-around;
+  }
+  .about-games .games__item_big {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc((100% - 500px) / 2);
+    padding-right: calc((100% - 500px) / 2);
+  }
+  .mini-games .game-mini-games {
+    flex-direction: column;
+  }
+  .mini-games .game-mini-games_reverse {
+    flex-direction: column;
+  }
+  .mini-games .game-mini-games__link {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;

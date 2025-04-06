@@ -3,6 +3,16 @@ $colorGreen: #BCEC30;
 $colorLightGreen: #E1FF8F;
 $colorWhite: #FFFFFF;
 
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -55,12 +65,12 @@ body {
         font-weight: 600;
         line-height: 142%;
         text-decoration: none;
-    
+
         padding: 16px 65px;
         background-color: $colorBlack;
         border-radius: 60px;
         border: 1px solid $colorBlack;
-    
+
         &:hover {
             color: $colorBlack;
             background-color: $colorWhite;
@@ -104,16 +114,22 @@ body {
 }
 
 .nav {
-    display: flex;
-    gap: 51px;
     background-color: $colorGreen;
     padding: 27px 0px;
     overflow: hidden;
+
+    &__content {
+        display: flex;
+        gap: 51px;
+        width: fit-content;
+        animation: marquee 30s linear forwards infinite;
+    }
 
     &__item {
         display: flex;
         gap: 51px;
         flex-shrink: 0;
+        white-space: nowrap;
     }
 
     &__text {
@@ -351,4 +367,6 @@ body {
 }
 
 
+@import "tablet1199";
+@import "tablet1024";
 @import "mobile";

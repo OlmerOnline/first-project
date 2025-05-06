@@ -25,7 +25,13 @@
   .top__link-go {
     font-size: 16px;
     padding: 16px 103px;
-    margin: 0px 29px;
+    margin: 0px calc((100% - 282px) / 2);
+  }
+  .top__link-go_mini-games {
+    display: inline-block;
+  }
+  .top__link-go_about-games {
+    display: none;
   }
   .top__star-left-green {
     position: absolute;
@@ -67,5 +73,68 @@
   }
   .about-games {
     display: none;
+  }
+  .mini-games {
+    padding-top: 48px;
+    padding-bottom: 49px;
+  }
+  .mini-games__title {
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 48px;
+  }
+  .mini-games__games-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .mini-games .game-mini-games {
+    flex-direction: column;
+  }
+  .mini-games .game-mini-games_reverse {
+    flex-direction: column;
+  }
+  .mini-games .game-mini-games__description {
+    padding: 29px 29px 33px 29px;
+    border-radius: 27px;
+  }
+  .mini-games .game-mini-games__name {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 16px;
+  }
+  .mini-games .game-mini-games__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 32px;
+  }
+  .mini-games .game-mini-games__link {
+    display: flex;
+    font-size: 16px;
+    line-height: 141.69%;
+    justify-content: center;
+    padding: 16px 0px;
+    border-radius: 60px;
+  }
+  .mini-games__star-top-little {
+    display: none;
+  }
+  .mini-games__star-top-middle {
+    display: none;
+  }
+  .mini-games__star-bottom-little {
+    display: none;
+  }
+  .mini-games__star-bottom-middle {
+    display: none;
+  }
+  .footer {
+    padding: 40px 0px;
+  }
+  .footer__text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
   }
 }/*# sourceMappingURL=mobile.css.map */

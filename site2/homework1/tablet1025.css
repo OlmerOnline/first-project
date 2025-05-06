@@ -1,0 +1,8 @@
+@media (max-width: 1024px) {
+  .mini-games .game-mini-games {
+    flex-direction: column;
+  }
+  .mini-games .game-mini-games_reverse {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=tablet1025.css.map */

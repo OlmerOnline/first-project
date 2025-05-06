@@ -1,0 +1,16 @@
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc((100% - 500px) / 2);
+    padding-right: calc((100% - 500px) / 2);
+  }
+  .mini-games .game-mini-games {
+    flex-direction: column;
+  }
+  .mini-games .game-mini-games_reverse {
+    flex-direction: column;
+  }
+  .mini-games .game-mini-games__link {
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=tablet1024.css.map */
